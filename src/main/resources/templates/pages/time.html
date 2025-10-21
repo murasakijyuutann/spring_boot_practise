@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date and Time</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: "Segoe UI", sans-serif;
+        background: linear-gradient(135deg, #f0f8ff, #d6f0ff, #aee6ff);
+        color: #003a5a;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        color: #005f87;
+        text-shadow: 2px 2px 6px rgba(255, 255, 255, 0.6);
+    }
+
+    p {
+        font-size: 1.5rem;
+        max-width: 500px;
+    }
+</style>
+<body>
+    <img class="meiko-img" th:src="@{/img/MEIKO_SP.webp}" alt="Miku Beam!" style="width: 300px; height: 400px; box-shadow: 0 0 15px rgba(0, 180, 255, 0.8); margin-top: 1rem;">
+    <div id="content">
+
+        <h1>Current Date and Time</h1>
+        <p th:text="${currentDateTime}"></p>
+        
+
+    </div>
+    
+</body>
+<script>
+    // You can add any JavaScript here if needed
+   setInterval(() => {
+        const date = new Date();
+        document.querySelector('p').textContent = date.toLocaleString();    
+    }, 1000); // Refresh every 1 second
+</script>
+</html>
