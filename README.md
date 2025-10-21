@@ -87,7 +87,7 @@ This project is open-source and free to use for educational purposes.
 
 💡 Author
 
-Created by [Your Name or GitHub Handle]
+Created by murasakijyuutann
 Focus: Learning and experimenting with Spring Boot basics.
 
 
