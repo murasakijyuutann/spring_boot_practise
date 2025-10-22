@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>User Form</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+    <h1>User Form (ModelAttribute)</h1>
+
+    <form th:action="@{/trueLogin}" th:object="${user}" method="post">
+        <label for="id">Username:</label>
+        <input type="text" id="id" th:field="*{id}" placeholder="Enter your username" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" th:field="*{email}" placeholder="Enter your email" required><br><br>
+
+        <label for="pw">Password:</label>
+        <input type="password" id="pw" th:field="*{pw}" placeholder="Enter your password" required><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

@@ -13,9 +13,9 @@ public class HelloController {
         return "index"; // This maps to templates/index.html
     }
 
-    @GetMapping("/time")
+    @GetMapping("/times")
     public String getCurrentTime(@RequestParam(name="name", required=false, defaultValue="World") String name) {
-        return "pages/time"; // This maps to templates/pages/time.html
+        return "pages/times"; // This maps to templates/pages/time.html
     }
     
 }
