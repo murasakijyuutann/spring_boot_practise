@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class DateTimeController {
 
-    @GetMapping("/time")
+    @GetMapping("/times")
     public String showDateTime(Model model) {
         String now = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
         model.addAttribute("currentDateTime", now);

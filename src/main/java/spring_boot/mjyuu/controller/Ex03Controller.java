@@ -11,6 +11,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 @Controller
 public class Ex03Controller {
 
+    @GetMapping("/")
+    public String home(Model model) {
+        return "index";
+    }
+
     @GetMapping("/userForm")
     public String formPage(Model model) {
         model.addAttribute("user", new User());
