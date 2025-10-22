@@ -1,0 +1,41 @@
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Segoe UI", sans-serif;
+            background: linear-gradient(135deg, #00c8ff, #66e0ff, #b3f5ff);
+            color: #004b6b;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #0066aa;
+            text-shadow: 2px 2px 6px rgba(255, 255, 255, 0.6);
+        }
+
+        p {
+            font-size: 1.2rem;
+            max-width: 500px;
+        }
+
+        .miku-img {
+    width: 300px;
+    height: 200px;
+    border-radius: 0;
+    box-shadow: 0 0 15px rgba(0, 180, 255, 0.8);
+    margin-bottom: 1rem;
+}
+
+
+        footer {
+            position: absolute;
+            bottom: 15px;
+            font-size: 0.9rem;
+            color: #003a5a;
+            opacity: 0.8;
+        }
